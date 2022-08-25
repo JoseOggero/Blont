@@ -1,0 +1,193 @@
+header {
+  text-align: end;
+  padding-right: 25px;
+}
+
+header ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: pink;
+}
+
+.contacto :hover {
+  color: palevioletred;
+}
+
+.fondo {
+  background-color: rgb(254, 233, 237);
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+.logo {
+  font-size: 35px;
+  text-align: center;
+  color: pink;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+
+.busqueda {
+  margin: auto;
+  width: 200px;
+}
+
+.texto {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.lupa {
+  color: rgb(254, 233, 237);
+  background-color: pink;
+  border: 2px solid;
+  border-color: palevioletred;
+  border-radius: 5px;
+  width: 40px;
+}
+
+.barra {
+  border: 2px solid;
+  border-radius: 20px;
+  background-color: pink;
+  border-color: palevioletred;
+  margin-top: 50px;
+}
+
+.nav {
+  color: rgb(254, 233, 237);
+}
+
+.productos {
+  text-align: center;
+  color: pink;
+  margin-top: 50px;
+  font-size: 40px;
+}
+
+.barrita3 {
+  width: 60%;
+  display: block;
+  margin: auto;
+  color: palevioletred;
+  margin-bottom: 40px;
+}
+
+.prod {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 20px;
+}
+
+.producto {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 20px;
+  height: 350px;
+  border: 2px solid;
+  border-color: palevioletred;
+  background-color: plum;
+  max-width: 300px;
+  border-radius: 20px;
+}
+
+.remera-img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 330px;
+  padding-top: 10px;
+  max-width: 250px;
+}
+
+.m-productos {
+  height: 175px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.plus {
+  font-size: 55px;
+  padding-top: 40px;
+  color: plum;
+}
+
+.m-productos a :hover {
+  color: palevioletred;
+  transform: scale(1.3, 1.3);
+  transition: 1s;
+}
+
+.select {
+  width: 250px;
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+}
+
+.footer {
+  background-color: rgb(254, 233, 237);
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  padding-bottom: 50px;
+}
+
+.footer h2 {
+  text-align: center;
+  padding-top: 80px;
+  font-size: 50px;
+  color: pink;
+}
+
+.barrita1 {
+  display: block;
+  margin: auto;
+  width: 55%;
+  color: palevioletred;
+  height: 3px;
+}
+
+.barrita2 {
+  display: block;
+  margin: auto;
+  width: 45%;
+  color: palevioletred;
+  height: 3px;
+}
+
+.redes {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 30px;
+  color: palevioletred;
+  margin-top: 20px;
+}
+
+.redes a :hover {
+  color: rgb(165, 52, 90);
+  transform: scale(1.1, 1.1);
+  transition: 0.5s;
+}
+
+.contac {
+  text-align: center;
+  font-size: 20px;
+}
+
+.footer h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  color: rgb(165, 52, 90);
+}
+
+/*# sourceMappingURL=productos.css.map */

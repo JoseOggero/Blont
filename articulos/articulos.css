@@ -1,0 +1,255 @@
+header {
+  text-align: end;
+  padding-right: 25px;
+}
+
+header ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: pink;
+}
+
+.contacto :hover {
+  color: palevioletred;
+}
+
+.fondo {
+  background-color: rgb(254, 233, 237);
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+.logo {
+  font-size: 35px;
+  text-align: center;
+  color: pink;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+
+.busqueda {
+  margin: auto;
+  width: 200px;
+}
+
+.texto {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.lupa {
+  color: rgb(254, 233, 237);
+  background-color: pink;
+  border: 2px solid;
+  border-color: palevioletred;
+  border-radius: 5px;
+  width: 40px;
+}
+
+.barra {
+  border: 2px solid;
+  border-radius: 20px;
+  background-color: pink;
+  border-color: palevioletred;
+  margin-top: 50px;
+}
+
+.nav {
+  color: rgb(254, 233, 237);
+}
+
+.prod {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.contenedor {
+  height: 450px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.producto {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid;
+  border-radius: 20px;
+  background-color: plum;
+  border-color: palevioletred;
+  max-width: 350px;
+}
+
+.imgremera {
+  width: 250px;
+  height: 350px;
+  display: block;
+  margin: auto;
+}
+
+.info-prod {
+  margin-bottom: 50px;
+}
+
+.AdlT {
+  color: rgb(165, 52, 90);
+  margin-bottom: 30px;
+}
+
+.precio {
+  color: rgb(165, 52, 90);
+  margin-bottom: 25px;
+}
+
+.FP a {
+  color: rgb(165, 52, 90);
+}
+
+.FP {
+  margin-bottom: 20px;
+}
+
+.texto1 {
+  color: rgb(165, 52, 90);
+  font-size: 15px;
+}
+
+.select {
+  width: 150px;
+  border-radius: 20px;
+}
+
+.boton {
+  width: 60%;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 100px;
+  border-color: palevioletred;
+  background-color: pink;
+  color: rgb(254, 233, 237);
+}
+
+.MP {
+  text-align: center;
+  border: 2px solid;
+  border-color: palevioletred;
+  background-color: pink;
+  color: rgb(254, 233, 237);
+  border-radius: 20px;
+  padding-top: 5px;
+  height: 55px;
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+.prod {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.mproductos {
+  margin-top: 50px;
+  border: 2px solid;
+  height: 300px;
+  max-width: 400px;
+  border-radius: 20px;
+  border-color: palevioletred;
+  background-color: plum;
+}
+
+.remera-img {
+  height: 280px;
+  display: block;
+  margin: auto;
+  padding-top: 5px;
+}
+
+.mas {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 50px;
+  height: 300px;
+  border-radius: 20px;
+  padding-top: 110px;
+  font-size: 55px;
+  margin-bottom: 50px;
+}
+
+.plus {
+  color: plum;
+}
+
+.mas :hover {
+  color: palevioletred;
+  transform: scale(1.2, 1.2);
+  transition: 1s;
+}
+
+.footer {
+  background-color: rgb(254, 233, 237);
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  padding-bottom: 50px;
+  margin-top: 20px;
+}
+
+.footer h2 {
+  text-align: center;
+  padding-top: 80px;
+  font-size: 50px;
+  color: pink;
+}
+
+.barrita1 {
+  display: block;
+  margin: auto;
+  width: 55%;
+  color: palevioletred;
+  height: 3px;
+}
+
+.barrita2 {
+  display: block;
+  margin: auto;
+  width: 45%;
+  color: palevioletred;
+  height: 3px;
+}
+
+.redes {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 30px;
+  color: palevioletred;
+  margin-top: 20px;
+}
+
+.redes a :hover {
+  color: rgb(165, 52, 90);
+  transform: scale(1.1, 1.1);
+  transition: 0.5s;
+}
+
+.contac {
+  text-align: center;
+  font-size: 20px;
+}
+
+.footer h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  color: rgb(165, 52, 90);
+}
+
+/*# sourceMappingURL=articulos.css.map */
