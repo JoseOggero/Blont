@@ -22,6 +22,10 @@ let precioTotal = 0
 
 alert("Estos son nuestros productos: \n - Remera\n - Buzo\n - Campera\n - Pantalon\n - Short")
 
+function precio(cantidad, precio) { 
+  precioTotal = precioTotal + (cantidad * precio)
+}
+
 let cantidadCompra = prompt("Que cantidad de productos distintos quiere comprar: ")
 
 for(let i = 0; i < cantidadCompra; i = i + 1){
@@ -32,7 +36,7 @@ for(let i = 0; i < cantidadCompra; i = i + 1){
   if (productoCompra.toUpperCase() == 'REMERA'){
       let cantidadProductoRemera = prompt("ingrese que cantidad de " + nombreProductoA + " desea comprar: ")
       if (cantidadProductoRemera<= stockProductoA) {
-        precioTotal = precioTotal + (cantidadProductoRemera * precioProductoA)
+        precio(cantidadProductoRemera * precioProductoA)
       }
       else{ 
         alert("Actualmente tenemos " + stockProductoA + " unidades de este producto")
@@ -40,19 +44,19 @@ for(let i = 0; i < cantidadCompra; i = i + 1){
   }
   else if (productoCompra == 'Buzo'){  
     let cantidadProductoBuzo = prompt("ingrese que cantidad de " + nombreProductoB + " desea comprar: ")
-    precioTotal = precioTotal + (cantidadProductoBuzo * precioProductoB)
+    precio(cantidadProductoBuzo * precioProductoB)
   }
   else if (productoCompra == 'Campera'){  
     let cantidadProductoCampera = prompt("ingrese que cantidad de " + nombreProductoC + " desea comprar: ")
-    precioTotal = precioTotal + (cantidadProductoCampera * precioProductoC)
+    precio(cantidadProductoCampera * precioProductoC)
   }
     else if (productoCompra == 'Pantalon'){  
     let cantidadProductoPantalon = prompt("ingrese que cantidad de " + nombreProductoD + " desea comprar: ")
-    precioTotal = precioTotal + (cantidadProductoPantalon * precioProductoD)
+    precio(cantidadProductoPantalon * precioProductoD)
   }
     else if (productoCompra == 'Short'){  
     let cantidadProductoShort = prompt("ingrese que cantidad de " + nombreProductoE + " desea comprar: ")
-    precioTotal = precioTotal + (cantidadProductoShort * precioProductoE)
+    precio(cantidadProductoShort * precioProductoE)
   }
   else{ 
     alert("No tenemos ese producto a la venta")

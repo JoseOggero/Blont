@@ -1,0 +1,11 @@
+{
+  "editor.accessibilityPageSize": 10,
+  "workbench.activityBar.iconClickBehavior": "toggle",
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.preferredHighContrastLightColorTheme": "Visual Studio Dark",
+  "workbench.iconTheme": "vs-seti",
+  "workbench.tree.indent": 8,
+  "workbench.tree.renderIndentGuides": "onHover",
+  "scm.diffDecorationsGutterWidth": 3,
+  "scm.repositories.visible": 10
+}
