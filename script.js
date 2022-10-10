@@ -1,62 +1,77 @@
-let nombreProductoA = 'Remera'
-let precioProductoA = 3500
-let stockProductoA = 15
+function Producto(nombre, precio, stock){ 
+  this.nombre = nombre;
+  this.precio = precio;
+  this.stock = stock;
+  this.restartStock = function(cantidad){ 
+    this.stock -= cantidad
+  }
+}
 
-let nombreProductoB = 'Buzo'
-let precioProductoB = 6500
-let stockProductoB = 15
+let productoA = new Producto ("Remera", 3000, 50)
+let productoB = new Producto ("Buzo", 6500, 45)
+let productoC = new Producto ("Campera", 7000, 20)
+let productoD = new Producto ("Pantalon", 6000, 35)
+let productoE = new Producto ("Short", 3000, 15)
 
-let nombreProductoC = 'Campera'
-let precioProductoC = 7000
-let stockProductoC = 15
+let listaProductos = [productoA, productoB, productoC, productoD, productoE]
 
-let nombreProductoD = 'Pantalon'
-let precioProductoD = 6000
-let stockProductoD = 15
+let listaNombres = []
 
-let nombreProductoE = 'Short'
-let precioProductoE = 3000
-let stockProductoE = 15
+for(const prod of listaProductos){  
+    if(prod.stock > 0){
+      listaNombres.push(prod.nombre)
+    }
+}
 
 let precioTotal = 0 
 
-alert("Estos son nuestros productos: \n - Remera\n - Buzo\n - Campera\n - Pantalon\n - Short")
+alert("Estos son nuestros productos: \n - " + listaNombres.join("\n - "))
 
-function precio(cantidad, precio) { 
-  precioTotal = precioTotal + (cantidad * precio)
+function calculoPrecio(cantidad, precio) { 
+  precioTotal += (cantidad * precio)
+}
+
+function calculoStock(cantidad, stock, precio) {
+        if (cantidad <= stock) {
+        calculoPrecio(cantidad * precio)
+      }
+      else{ 
+        alert("Actualmente tenemos " + stock + " unidades de este producto")
+      }
 }
 
 let cantidadCompra = prompt("Que cantidad de productos distintos quiere comprar: ")
 
 for(let i = 0; i < cantidadCompra; i = i + 1){
 
+
   let productoCompra = prompt("Ingrese que producto quiere comprar: \n - Remera\n - Buzo\n - Campera\n - Pantalon\n - Short")
 
 
   if (productoCompra.toUpperCase() == 'REMERA'){
       let cantidadProductoRemera = prompt("ingrese que cantidad de " + nombreProductoA + " desea comprar: ")
-      if (cantidadProductoRemera<= stockProductoA) {
-        precio(cantidadProductoRemera * precioProductoA)
-      }
-      else{ 
-        alert("Actualmente tenemos " + stockProductoA + " unidades de este producto")
-      }
+      calculoStock(cantidadProductoRemera, stockProductoA, precioProductoA)
+      productoA.restarStock(cantidadProductoRemera)
   }
   else if (productoCompra == 'Buzo'){  
     let cantidadProductoBuzo = prompt("ingrese que cantidad de " + nombreProductoB + " desea comprar: ")
-    precio(cantidadProductoBuzo * precioProductoB)
+    calculoStock(cantidadProductoBuzo, stockProductoB, precioProductoB)
+    productoB.restarStock(cantidadProductoBuzo)
   }
   else if (productoCompra == 'Campera'){  
     let cantidadProductoCampera = prompt("ingrese que cantidad de " + nombreProductoC + " desea comprar: ")
-    precio(cantidadProductoCampera * precioProductoC)
+    calculoStock(cantidadProductoCampera, stockProductoC, precioProductoC)
+    productoC.restarStock(cantidadProductoCampera)
   }
     else if (productoCompra == 'Pantalon'){  
     let cantidadProductoPantalon = prompt("ingrese que cantidad de " + nombreProductoD + " desea comprar: ")
-    precio(cantidadProductoPantalon * precioProductoD)
+    calculoStock(cantidadProductoPantalon, stockProductoD, precioProductoD)
+    productoD.restarStock(cantidadProductoPantalon)
   }
     else if (productoCompra == 'Short'){  
     let cantidadProductoShort = prompt("ingrese que cantidad de " + nombreProductoE + " desea comprar: ")
-    precio(cantidadProductoShort * precioProductoE)
+    calculoStock(cantidadProductoShort, stockProductoE, precioProductoE)
+    productoE.restarStock(cantidadProductoShort)
   }
   else{ 
     alert("No tenemos ese producto a la venta")
@@ -65,4 +80,7 @@ for(let i = 0; i < cantidadCompra; i = i + 1){
 }
 if (precioTotal != 0) {
   alert("El precio total es: " + precioTotal)
+}
+else{ 
+  alert("Gracias por su visita!")
 }
